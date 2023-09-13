@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>ecommerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awsome.min.css">
+</head>
+<body>
+   <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <li><a href="cart.html"><img src="images/cart.png" width="40px" height="25px"></a></li>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"></a> 
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Class is timeless</h1>
+                <p>Explore the 24/7 collection of prestigious, high-precision timepieces. 24/7 offers a wide assortment of Classic and Professional watch models to suit any wrist. Discover the broad selection of watches to find a perfect combination of style and functionality.</p>
+                <a href="shop.html"></a><a href="" class="btn">Explore Now</a>
+            </div>
+            <div class="col-2">
+                <img src="images/watches.png">
+            </div>
+        </div>
+    </div>
+   </div>
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/cat.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/cat2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/cat3.jpg">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/rolex.jpg">
+                <h4>Rolex</h4>
+                <p>Rs. 74,86,087</p>
+            </div>
+            <div class="col-4">
+                <img src="images/cartier.jpg">
+                <h4>Cartier</h4>
+                <p>Rs. 7,07,173</p>
+            </div>
+            <div class="col-4">
+                <img src="images/omega.jpg">
+                <h4>Omega</h4>
+                <p>Rs. 656,200</p>
+            </div>
+            <div class="col-4">
+                <img src="images/fossil.jpg">
+                <h4>Fossil</h4>
+                <p>Rs. 23,107</p>
+            </div>
+        </div>
+    </div>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/partner.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>As watch enthusiasts and tech aficionados come together to celebrate this collaboration, the future of timekeeping looks brighter and more exciting than ever before. With these watches, it's not just about telling time; it's about experiencing it in a whole new way.</p>
+                    <h1>Angel Investor</h1>
+                    <small>A partnership between a watch company and an embedded technology (emblock) firm can yield innovative and sophisticated timepiece solutions. These watches, embedded with cutting-edge technology from emblock, bring together the timeless elegance of traditional watchmaking with the power of modern embedded systems.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <p>Very nice place to buy high end products 👌👌👌...</p>
+                    <img src="images/bill.jpg">
+                </div>
+                <div class="col-3">
+                    <p>Best for window shopping</p>
+                    <img src="images/steve.jpg">
+                </div>
+                <div class="col-3">
+                    <p> A huge collection of watches, awesome</p>
+                    <img src="images/elon.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/apple.png">
+                        <img src="images/google.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our purpose is to Sustainably Make the Pleasure and Benefits of Watches Accessible to Many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="www.facebook.com"><li>Facebook</li></a>
+                        <a href="www.instagram"><li>Instagram</li></a>
+                        <a href="www.twitter.com"><li>Twitter</li></a>
+                        <a href="www.youtube.com"><li>YouTube</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight == "200px"
+            }
+            else{
+                MenuItems.style.maxHeight ="0px"
+            }
+        }
+    </script>
+</body>
+
+</html>
